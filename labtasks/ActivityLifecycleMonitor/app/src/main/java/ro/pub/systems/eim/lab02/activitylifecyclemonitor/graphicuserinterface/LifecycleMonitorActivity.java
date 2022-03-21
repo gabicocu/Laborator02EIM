@@ -66,6 +66,7 @@ public class LifecycleMonitorActivity extends AppCompatActivity {
             Log.d(Constants.TAG, "onCreate() method was invoked without a previous state");
         } else {
             Log.d(Constants.TAG, "onCreate() method was invoked with a previous state");
+            /*
             if(savedInstanceState.containsKey(Constants.USERNAME_EDIT_TEXT)) {
                 EditText usernameEditText = (EditText) findViewById(R.id.username_edit_text);
                 usernameEditText.setText(savedInstanceState.getString(Constants.USERNAME_EDIT_TEXT));
@@ -78,6 +79,8 @@ public class LifecycleMonitorActivity extends AppCompatActivity {
                 CheckBox rememberMeCheckbox = (CheckBox) findViewById(R.id.remember_me_checkbox);
                 rememberMeCheckbox.setChecked(savedInstanceState.getBoolean(Constants.REMEMBER_ME_CHECKBOX));
             }
+
+             */
         }
     }
 
@@ -116,7 +119,7 @@ public class LifecycleMonitorActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d(Constants.TAG, "onDestroy() method was invoked");
     }
-
+/*
     public void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
         CheckBox rememberMeCheckbox = (CheckBox) findViewById(R.id.remember_me_checkbox);
@@ -132,6 +135,8 @@ public class LifecycleMonitorActivity extends AppCompatActivity {
             savedInstanceState.putBoolean(Constants.REMEMBER_ME_CHECKBOX, rememberMeCheckbox.isChecked());
         }
     }
+
+
 
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
@@ -155,6 +160,6 @@ public class LifecycleMonitorActivity extends AppCompatActivity {
 
 
     }
-
+*/
 
 }
